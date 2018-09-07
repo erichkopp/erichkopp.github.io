@@ -1,0 +1,52 @@
+body {
+	/*background-color: purple;*/
+	background-color: #ba68c8;
+	background-color: #b388ff;
+	/*background-color: pink;*/
+	/*background-color: #f8bbd0;*/
+
+
+}
+
+#app {
+    width: 406px;
+    height: 522px;
+    
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.background {
+	border-radius: 8px;
+	box-shadow: 10px 7px 14px 3px rgba(0,0,0,0.63);
+	background-color: #1a1a1a;
+	padding: 5px;
+}
+
+.wheel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5px;
+}
+
+.buttons {
+	width: 128px;
+	margin: 0 auto;
+	margin-top: -323px;
+	position: relative;
+	z-index: 1;
+}
+
+.buttons img {
+	padding-top: 22px;
+	padding-bottom: 22px;
+	padding-left: 5px;
+}
+
+.buttons img:hover {
+	cursor: pointer;
+	opacity: 0.6;
+	transition: .2s;
+}
