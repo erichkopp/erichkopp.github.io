@@ -4,8 +4,10 @@ body {
 	background-color: #b388ff;
 	/*background-color: pink;*/
 	/*background-color: #f8bbd0;*/
+}
 
-
+@-ms-viewport{
+  width: device-width;
 }
 
 #app {
