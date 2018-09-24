@@ -12,9 +12,11 @@ body {
 
 #app {
     width: 406px;
-    height: 522px;    
+    height: 522px;
+    
     margin: 0 auto;
     position: relative;
+
 }
 
 .background {
