@@ -1,20 +1,17 @@
 body {
-	/*background-color: purple;*/
-	background-color: #ba68c8;
-	background-color: #b388ff;
-	/*background-color: pink;*/
-	/*background-color: #f8bbd0;*/
+	background-color: black;
 }
 
 @-ms-viewport{
   width: device-width;
 }
 
-.boundary {
+/*.boundary {
 	width: 450px;
 	height: 550px;
 	margin: 0 auto;
-}
+	background-color: black;
+}*/
 
 #app {
     width: 406px;
