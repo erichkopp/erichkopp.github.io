@@ -1,5 +1,6 @@
 body {
 	background-color: black;
+	overflow: hidden;
 }
 
 @-ms-viewport{
@@ -38,7 +39,7 @@ body {
 .buttons {
 	width: 128px;
 	margin: 0 auto;
-	margin-top: -323px;
+	margin-top: -318px;
 	position: relative;
 	z-index: 1;
 }
