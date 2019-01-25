@@ -23,4 +23,7 @@ $(document).ready(function() {
 		showChord(--id);
 	});
 
+
+	$('map').imageMapResize();
+
 });

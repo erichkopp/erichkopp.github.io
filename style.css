@@ -1,62 +1,47 @@
 html, body {
-	max-width: 100%;
-	max-height: 100%;
-	overflow: hidden
+	background-color: #1A1A1A;
 }
 
 body {
-	background-color: black;
+	overflow: hidden;
 }
 
-@-ms-viewport{
+/*@-ms-viewport{
   width: device-width;
-}
-
-/*.boundary {
-	width: 450px;
-	height: 550px;
-	margin: 0 auto;
-	background-color: black;
 }*/
 
-#app {
-    width: 406px;
-    height: 522px;    
-    margin: 0 auto;
-    position: relative;
-
+img {
+	user-select: none;
 }
 
-.background {
-	border-radius: 8px;
-	box-shadow: 10px 7px 14px 3px rgba(0,0,0,0.63);
-	background-color: #1a1a1a;
-	padding: 5px;
-}
+/*#app * {
+	height: 100%;
+	width: auto;
+}*/
 
 .wheel {
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 5px;
+  position: absolute;
+  height: 100%;
+	width: auto;
+  top: 0;
+  /*margin: 0 auto;*/
+  padding: 0;
+  border: 0;
+/*    display: block;
+  margin-left: auto;
+  margin-right: auto;*/
 }
 
-.buttons {
-	width: 128px;
-	margin: 0 auto;
-	margin-top: -318px;
-	position: relative;
-	z-index: 1;
-}
 
-.buttons img {
+
+/*.buttons img {
 	padding-top: 22px;
 	padding-bottom: 22px;
 	padding-left: 5px;
-}
+}*/
 
-.buttons img:hover {
+/*.buttons img:hover {
 	cursor: pointer;
 	opacity: 0.6;
 	transition: .2s;
-}
+}*/
