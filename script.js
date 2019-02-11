@@ -4,29 +4,40 @@ $(document).ready(function() {
 	$(".wheel").hide();
 	$("#"+id).show();
 
-	function showChord(id) {
+	function showChordPlus(id) {
 		$(".wheel").hide();
-		$(".gif").show();
+		$(".plus_gif").show();
 
 		setTimeout(
 		  function() 
 		  {
 				$("#"+id).show();
-		  }, 100);
+		  }, 200);
+	}
+
+	function showChordMinus(id) {
+		$(".wheel").hide();
+		$(".minus_gif").show();
+
+		setTimeout(
+		  function() 
+		  {
+				$("#"+id).show();
+		  }, 200);
 	}
 
 	$("#plus").click(function() {
 		if (id == 12) {
 			id = 0;
 		}
-		showChord(++id);
+		showChordPlus(++id);
 	});
 
 	$("#minus").click(function() {
 		if (id == 1) {
 			id = 13;
 		}
-		showChord(--id);
+		showChordMinus(--id);
 	});
 
 
