@@ -6,25 +6,18 @@ body {
 	overflow: hidden;
 }
 
-@-ms-viewport{
+/*@-ms-viewport{
   width: device-width;
-}
+}*/
 
 img {
 	user-select: none;
 }
 
-/*#app * {
-	height: 100%;
-	width: auto;
-}*/
-
 .wheel {
-  /*position: absolute;*/
   height: 100%;
 	width: auto;
   top: 0;
-  /*margin: 0 auto;*/
   padding: 0;
   border: 0;
     display: block;
@@ -33,16 +26,10 @@ img {
 
 }
 
+@media (max-width: 479px) {
 
+	.wheel {
+		width: 100%;
 
-/*.buttons img {
-	padding-top: 22px;
-	padding-bottom: 22px;
-	padding-left: 5px;
-}*/
-
-/*.buttons img:hover {
-	cursor: pointer;
-	opacity: 0.6;
-	transition: .2s;
-}*/
+	}
+}
