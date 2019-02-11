@@ -6,7 +6,13 @@ $(document).ready(function() {
 
 	function showChord(id) {
 		$(".wheel").hide();
-		$("#"+id).show();
+		$(".gif").show();
+
+		setTimeout(
+		  function() 
+		  {
+				$("#"+id).show();
+		  }, 100);
 	}
 
 	$("#plus").click(function() {
@@ -34,3 +40,5 @@ function PlaySound() {
     audio.currentTime = 0; // rewind to start to rapidly play sound
     sound.play()
 }
+
+
