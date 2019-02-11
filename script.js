@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 	var id = 1;
 	$(".wheel").hide();
+	$(".animation").hide();
 	$("#"+id).show();
 
 	function showChordPlus(id) {
@@ -12,6 +13,7 @@ $(document).ready(function() {
 		  function() 
 		  {
 				$("#"+id).show();
+				$(".animation").hide();
 		  }, 200);
 	}
 
@@ -23,6 +25,7 @@ $(document).ready(function() {
 		  function() 
 		  {
 				$("#"+id).show();
+				$(".animation").hide();
 		  }, 200);
 	}
 
