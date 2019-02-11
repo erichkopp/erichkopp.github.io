@@ -32,12 +32,19 @@
 			<img class="wheel" id="12" src="components/12.png" usemap="#chordmap">
 
 			<map name="chordmap">
-  			<area shape="poly" coords="138,382,203,335,268,382" id="plus">
-  			<area shape="poly" coords="138,428,268,428,203,475" id="minus">
+  			<area shape="poly" coords="138,382,203,335,268,382" id="plus" onclick="PlaySound()">
+  			<area shape="poly" coords="138,428,268,428,203,475" id="minus" onclick="PlaySound()">
 			</map>
 
 		</div>
 	</div>
+
+
+	<audio id="audio" src="click.wav" autostart="false" ></audio>
+
+
+
+
 
 <!-- jQuery -->
 <script src="jquery-3.3.1.slim.min.js" ></script>

@@ -26,4 +26,11 @@ $(document).ready(function() {
 
 	$('map').imageMapResize();
 
+
 });
+
+function PlaySound() {
+    var sound = document.getElementById("audio");
+    audio.currentTime = 0; // rewind to start to rapidly play sound
+    sound.play()
+}
