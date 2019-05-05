@@ -172,5 +172,8 @@ background-size:0px 0px, 3px 5px, 2px 2px, 2px 2px;*/
 	height: 100%;
 	}
 
+	#game-notifications {
+		top: 30%;
+	}
 
 }
