@@ -5,29 +5,28 @@ $(document).ready(function() {
 	$(".animation").hide();
 	$("#"+id).show();
 
+
 	function showChordPlus(id) {
 		$(".wheel").hide();
 		$(".plus_gif").show();
 
-		setTimeout(
-		  function() 
-		  {
+		setTimeout(function() {
 				$("#"+id).show();
 				$(".animation").hide();
 		  }, 200);
 	}
+
 
 	function showChordMinus(id) {
 		$(".wheel").hide();
 		$(".minus_gif").show();
 
-		setTimeout(
-		  function() 
-		  {
+		setTimeout(function() {
 				$("#"+id).show();
 				$(".animation").hide();
 		  }, 200);
 	}
+
 
 	$("#plus").click(function() {
 		if (id == 12) {
@@ -35,6 +34,7 @@ $(document).ready(function() {
 		}
 		showChordPlus(++id);
 	});
+	
 
 	$("#minus").click(function() {
 		if (id == 1) {
