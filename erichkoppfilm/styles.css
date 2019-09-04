@@ -60,6 +60,10 @@ a {
 	text-align: center;
 }
 
+#logo:hover {
+	cursor: pointer;
+}
+
 #erichkopp {
 	font-family: 'Anton', sans-serif;
 	font-size: 48px;
