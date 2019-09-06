@@ -9,6 +9,7 @@ html {
 }
 
 body {
+	display: block;
 	height: 100%;
 	background: #FFFFFF;
 	font-family: 'BenchNine', sans-serif;
@@ -99,9 +100,56 @@ a {
 	padding-left: 50px;
 }
 
-.scrolling-wrapper {
+#more-arrow {
+  position: sticky;
+	right: 40px;
+	font-size: 32px;
+	/*opacity: .7;*/
+	z-index: 10;
+  bottom: 50%;
+/*  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);*/
+}
+
+#contact-page {
+	display: block;
 	height: 60%;
-	width: 100%
+	width: 100%;
+	position: relative;
+}
+
+#contact-container {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#contact-form input, textarea {
+	font-family: 'BenchNine', sans-serif;
+	letter-spacing: 5px;
+	font-size: 1em;
+	padding: 1em;
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: .5em;	
+}
+
+#contact-form button {
+	/*font-family: 'Anton', sans-serif;*/
+	float: right;
+}
+
+#scrolling-wrapper {
+	height: 60%;
+	width: 100%;
+	overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+/* ADDED WITH JS AFTER SCROLL-IN ANIMATION */
+.hidden-y-scroll-x {
+	overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .photo {
@@ -121,12 +169,6 @@ a {
 
 .photo:hover {
 	cursor: pointer;
-}
-
-.scrolling-wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
 }
 
 #footer {

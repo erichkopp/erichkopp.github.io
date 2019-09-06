@@ -4,8 +4,9 @@
 	<title>Erich Kopp Photography</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Anton|BenchNine:700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Anton|BenchNine:700&display=block" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="animate.min.css">
 	<script src="https://kit.fontawesome.com/e8b74c6543.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
@@ -18,21 +19,21 @@
 
 
 	<div id="header">
-		<div id="logo" class="noselect">
+		<div id="logo">
 			<div id="erichkopp">ERICH KOPP</div>
 			<div id="subheader">FILM PHOTOGRAPHY</div>
 		</div>
 		<ul id="nav-links">
-			<li><a href="index.html">WORK</a></li>
-			<li><a href="#">CONTACT</a></li>
+			<li><a href="#" style="border-color: #000000" id="work">WORK</a></li>
+			<li><a href="#" id="contact">CONTACT</a></li>
 		</ul>
 	</div>
 
 
 
-	<div class="scrolling-wrapper disable-scrollbars">
+	<div id="scrolling-wrapper" class="disable-scrollbars animated slideInRight delay-1s">
 
-		<div class="photo">
+		<div class="photo" id="first-img">
 			<img src="assets/033.jpg">
 		</div>
 		<div class="photo">
@@ -132,6 +133,20 @@
 			<img src="assets/032.jpg">
 		</div>
 
+		<i id="more-arrow" class="fas fa-chevron-circle-right"></i>
+	</div>
+
+	<div id="contact-page" style="display: none">
+
+		<div id="contact-container">
+			<form id="contact-form" method="POST" action="https://formspree.io/erichkopp@gmail.com">
+				<div><input type="email" name="email" placeholder="Your email"></div>
+				<div><textarea name="message" placeholder="Your Message..."></textarea></div>
+				<input type="hidden" name="_subject" value="New submission!" />
+				<input type="text" name="_gotcha" style="display:none" />
+				<button type="submit">Send Message</button>
+			</form>
+		</div>
 
 	</div>
 
