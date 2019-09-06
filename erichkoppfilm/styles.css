@@ -81,19 +81,23 @@ a {
 #nav-links {
 	position: relative;
 	font-size: 18px;
-	letter-spacing: 25%;
 	float: right;	
 }
 
 #nav-links a {
 	position: relative;
-	transition: .6s;
 	width: 94%;
 	border-bottom: 3px solid transparent;
 }
 
 #nav-links a:hover {
 	border-color: #000000;
+	transition: 2s;
+}
+
+#nav-links a:active {
+	border-color: pink;
+	transition: 2s;
 }
 
 #nav-links li {
