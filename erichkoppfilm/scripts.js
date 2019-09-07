@@ -1,9 +1,8 @@
 $(document).ready(function() {
 
 	$('#logo').click(function() {
-		window.location.href = 'index.html';
+    	location.reload();
 	});
-
 
 	$('.photo').click(function() {
 
@@ -39,7 +38,11 @@ $(document).ready(function() {
 			$('#contact-page').attr('style', 'display: block');
 			// $('#contact').attr('style', 'border-color: #000000');
 			$('#contact-page').addClass('animated slideInRight');
-		}, 500);
+			setTimeout(function() {
+				$('#contact-header').attr('style', 'color: #000000');
+				$('#contact-header').text('HIT ME UP!');
+			}, 800);
+		}, 800);
 	});
 
 	$('#work').click(function() {
@@ -53,5 +56,26 @@ $(document).ready(function() {
 			$('#contact-page').removeClass('slideOutRight');
 		}, 500);
 	});
+
+
+	$('#submit-button').click(function() {
+		setTimeout(function() {
+			$('#submit-button').animate({ 'letter-spacing': '50px' }, 50);
+		}, 200);
+
+		// Delay form submission for animation to complete
+		$('form').submit(function (e) {
+		    var form = this;
+		    e.preventDefault();
+		    setTimeout(function () {
+		        form.submit();
+		    }, 1000);
+		});
+	});
+
+
+
+
+
 
 });

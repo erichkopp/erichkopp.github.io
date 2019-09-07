@@ -95,11 +95,6 @@ a {
 	transition: 2s;
 }
 
-#nav-links a:active {
-	border-color: pink;
-	transition: 2s;
-}
-
 #nav-links li {
 	padding-left: 50px;
 }
@@ -122,24 +117,46 @@ a {
 	position: relative;
 }
 
+#contact-header {
+	color: transparent;
+	font-size: 24px;
+	padding-bottom: 2em;
+}
+
 #contact-container {
 	width: 50%;
 	margin: 0 auto;
+	padding: 5% 0;
 }
 
-#contact-form input, textarea {
+#email, #textarea {
 	font-family: 'BenchNine', sans-serif;
 	letter-spacing: 5px;
 	font-size: 1em;
 	padding: 1em;
 	box-sizing: border-box;
 	width: 100%;
-	margin-bottom: .5em;	
+	margin-bottom: 1em;
 }
 
-#contact-form button {
-	/*font-family: 'Anton', sans-serif;*/
-	float: right;
+#submit-button {
+	font-family: 'BenchNine', sans-serif;
+	letter-spacing: 5px;
+	font-size: 1em;
+	padding: .5em;
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 1em;
+	border: 1px solid #000000;
+	color: #FFFFFF;
+	background: #000000;
+	border-radius: 3px;
+}
+
+#submit-button:hover {
+	cursor: pointer;
+	background: #282828;
+	transition: .7s;
 }
 
 #scrolling-wrapper {
@@ -254,7 +271,7 @@ a {
 	color: #f1f1f1;
 	font-size: 40px;
 	font-weight: bold;
-	transition: 0.3s;
+	transition: 0.2s;
 }
 
 #close:hover,
