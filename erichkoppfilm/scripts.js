@@ -54,6 +54,7 @@ $(document).ready(function() {
 			$('#scrolling-wrapper').attr('style', 'display: block');
 			$('#scrolling-wrapper').addClass('slideInRight');
 			$('#contact-page').removeClass('slideOutRight');
+			$('#contact-header').attr('style', 'color: transparent');
 		}, 500);
 	});
 
