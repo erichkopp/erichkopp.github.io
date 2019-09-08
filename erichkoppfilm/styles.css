@@ -43,17 +43,13 @@ a {
 }
 
 #wrapper {
-	/*height: 100%;*/
 	position: relative;
 	min-height: 100vh;
-	/*overflow: hidden;*/
 }
 
 #header {
 	margin: 0 5rem;
 	padding: 2rem 0;
-	/*height: 50px;*/
-	/*line-height: 50px;*/
 	line-height: 3rem;
 }
 
@@ -108,11 +104,8 @@ a {
 	right: 5%;
 	font-size: 2rem;
 	color: #FFFFFF;
-	/*opacity: .7;*/
 	z-index: 10;
   bottom: 50%;
-/*  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);*/
 }
 
 #contact-page {
@@ -173,12 +166,6 @@ a {
   padding-bottom: 2.5rem;
 }
 
-/* ADDED WITH JS AFTER SCROLL-IN ANIMATION */
-.hidden-y-scroll-x {
-	overflow-x: scroll;
-  overflow-y: hidden;
-}
-
 .photo {
 	margin: -.75rem;
 	border-left: .75rem solid #000000;
@@ -199,9 +186,6 @@ a {
 }
 
 #footer {
-/*	margin: 0 100px;
-	height: 50px;
-	line-height: 50px;*/
 	position: absolute;
 	bottom: 0;
 	width: 100%;
