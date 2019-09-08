@@ -68,7 +68,7 @@ a {
 #erichkopp {
 	font-family: 'Anton', sans-serif;
 	font-size: 3rem;
-	letter-spacing: 10px;
+	letter-spacing: .75rem;
 }
 
 #subheader {
@@ -110,15 +110,16 @@ a {
 
 #contact-page {
 	display: block;
-	height: 60%;
+	height: 60vh;
 	width: 100%;
 	position: relative;
 }
 
 #contact-header {
 	color: transparent;
-	font-size: 24px;
-	padding-bottom: 2rem;
+	font-size: 2rem;
+	text-align: center;
+	padding-bottom: 4rem;
 }
 
 #contact-container {
@@ -130,21 +131,22 @@ a {
 #email, #textarea {
 	font-family: 'BenchNine', sans-serif;
 	letter-spacing: 5px;
-	font-size: 1em;
-	padding: 1em;
+	font-size: 1rem;
+	padding: 1rem;
 	box-sizing: border-box;
 	width: 100%;
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
 }
 
 #submit-button {
 	font-family: 'BenchNine', sans-serif;
-	letter-spacing: 5px;
-	font-size: 1em;
-	padding: .5em;
+	letter-spacing: .25rem;
+	font-size: 1rem;
+	padding: .5rem;
 	box-sizing: border-box;
 	width: 100%;
-	margin-bottom: 1em;
+	margin: 0 auto;
+	margin-bottom: 1rem;
 	border: 1px solid #000000;
 	color: #FFFFFF;
 	background: #000000;
@@ -269,4 +271,114 @@ a {
 	color: #bbb;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+
+
+/* MOBILE & TABLET VIEW */
+
+@media screen and (max-width: 750px) {
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	html, body {
+		overflow: hidden;
+	}
+
+	#header{
+		display: block;
+		margin: 0;
+		padding: 0;
+		padding-top: 1rem;
+	}
+
+	#header * {
+		text-align: center;
+		display: block
+	}
+
+	#erichkopp {
+		font-size: 2rem;
+		letter-spacing: .5rem;
+	}
+
+	#subheader {
+		font-size: .5rem;
+		margin-top: -1.5rem;
+		letter-spacing: .5rem;
+	}
+
+	#nav-links {
+		float: none;
+		font-size: 1rem;
+		margin-top: 1rem
+	}
+
+	#nav-links li {
+		padding: 0;
+		/*margin-bottom: -2rem;*/
+		/*display: inline-block;*/
+		display: block;
+		margin: 0 3rem;
+		margin-bottom: 2rem;
+	}
+
+	#nav-links a {
+		border-bottom: none;
+		width: inherit;
+		line-height: 1rem;
+	}
+
+	#nav-links a:hover {
+		border-color: none;
+		transition: none;
+	}
+
+	#contact-container {
+		width: 90%;
+	}
+
+	#contact-header {
+		font-size: 1.5rem;
+		padding-bottom: 3rem;
+	}
+
+	#email, #textarea {
+		margin-bottom: 2rem;
+	}
+
+	#scrolling-wrapper {
+		height: auto;
+		padding-bottom: 0;
+		margin-top: 3rem;
+	}
+
+	.photo img {
+		width: 100%;
+		height: auto;
+	}
+
+	.photo:hover {
+		cursor: default;
+	}
+
+	#social-links li {
+		padding-right: 1rem;
+	}
+
+	#copyright {
+		padding-left: 1rem
+	}
+
+	#modal img {
+		min-height:auto; 
+		max-height:auto;
+		min-width: 100%;
+		max-width: 100%;
+		margin-top: 50%;
+	}
+
 }
