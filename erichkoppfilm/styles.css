@@ -48,7 +48,7 @@ a {
 }
 
 /* HIDE IF NOT ON MOBILE */
-#hamburger, #close-mobile, #mobile-menu {
+#hamburger, #close-mobile, #mobile-menu, #scroll-top-mobile, #down-arrow-mobile, #last-mobile {
 	display: none;
 }
 
@@ -111,6 +111,7 @@ a {
 	color: #FFFFFF;
 	z-index: 10;
   bottom: 50%;
+  text-shadow: -3px 3px 5px #282828;
 }
 
 #contact-page {
@@ -280,6 +281,7 @@ a {
 
 
 
+
 /* MOBILE & TABLET VIEW */
 
 @media screen and (max-width: 750px) {
@@ -321,10 +323,6 @@ a {
 		color: #FFFFFF;
 	}
 
-/*	#hamburger:hover, #close-mobile:hover {
-		cursor: pointer;
-	}*/
-
 	#mobile-menu {
 		padding-top: 4rem;
 		display: none;
@@ -333,16 +331,17 @@ a {
 		color: #FFFFFF;
 		width: 100vw;
 		height: 100vh;
-		font-size: 2.5rem;
-		z-index: 1;
+		font-size: 2rem;
+		z-index: 2;
 		/*right: 0;*/
 		background-color: rgb(0,0,0); /* FALLBACK COLOR */
 		background-color: rgba(0,0,0,0.9); /* BLACK WITH OPACITY */
 	}
 
 	#mobile-menu ul li {
-		padding: 2rem;
+		padding: 1.8rem;
 		list-style: none;
+		/*float: right;*/
 	}
 
 	#erichkopp {
@@ -409,10 +408,34 @@ a {
 		height: 100vh;
 		overflow-x: hidden;
 		overflow-y: scroll;
+		background: #000000;
 	}
 
 	#more-arrow {
 		display: none;
+	}
+
+	#down-arrow-mobile {
+		display: inline-block;
+	  position: sticky;
+		top: 25%;
+		font-size: 2rem;
+		left: 50%;
+		color: #FFFFFF;
+		z-index: 1;
+		text-shadow: -3px 3px 5px #282828;
+	}
+
+	#scroll-top-mobile {
+		display: none;
+		position: absolute;
+		top: 60%;
+		left: 90%;
+		font-size: 2.5rem;
+		color: #FFFFFF;
+		z-index: 1;
+		text-shadow: -3px 3px 5px #282828;
+		/*cursor: pointer;*/
 	}
 
 	.photo {
@@ -437,12 +460,15 @@ a {
 		display: none;
 	}
 
-	#social-links li {
-		padding-right: 1rem;
+	#last-mobile {
+		display: block;
+		height: 20rem;
 	}
 
 	#copyright {
-		padding-left: 1rem
+		padding: 0;
+		text-align: center;
+		color: #FFFFFF;
 	}
 
 }
