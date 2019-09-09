@@ -116,6 +116,7 @@ $(document).ready(function() {
 			$('#mobile-menu').attr('style', 'display: none');
 		},500);
 		$('#contact-page').attr('style', 'display: none');
+		$('#contact-header').attr('style', 'color: transparent');
 		$('#scrolling-wrapper').attr('style', 'display: block');
 	});
 
@@ -136,20 +137,20 @@ $(document).ready(function() {
 	});
 
 
-	$('#submit-button').click(function() {
-		setTimeout(function() {
-			$('#submit-button').animate({ 'letter-spacing': '50px' }, 50);
-		}, 200);
+	// $('#submit-button').click(function() {
+	// 	setTimeout(function() {
+	// 		$('#submit-button').animate({ 'letter-spacing': '50px' }, 50);
+	// 	}, 200);
 
-		// Delay form submission for animation to complete
-		$('form').submit(function (e) {
-		    var form = this;
-		    e.preventDefault();
-		    setTimeout(function () {
-		        form.submit();
-		    }, 1000);
-		});
-	});
+	// 	// Delay form submission for animation to complete
+	// 	$('form').submit(function (e) {
+	// 	    var form = this;
+	// 	    e.preventDefault();
+	// 	    setTimeout(function () {
+	// 	        form.submit();
+	// 	    }, 1000);
+	// 	});
+	// });
 
 
 	$('#hamburger').click(function() {
