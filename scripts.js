@@ -4,6 +4,7 @@ $(document).ready(function() {
 	// KILL DESKTOP ANIMATIONS FOR MOBILE
 	if ($(window).width() <= 750) {
 		$('#scrolling-wrapper').removeClass('animated slideInRight delay-1s');
+		$('#contact-header').removeClass('animated slideInLeft delay-1s');
 	};
 
 
@@ -73,8 +74,10 @@ $(document).ready(function() {
 			$('#mobile-menu').attr('style', 'display: none');
 			$('#hamburger').attr('style', 'display: none');
 			$('#close-mobile').attr('style', 'display: none');
+			$('#contact-header').addClass('animated slideInLeft delay-1s');
 		} else if ($(window).width() <= 750) {
 			$('#scrolling-wrapper').removeClass('animated slideInRight delay-1s');
+			$('#contact-header').removeClass('animated slideInLeft delay-1s');
 			$('#scroll-top-mobile').attr('style', 'display: none');
 			$('#mobile-menu').attr('style', 'display: none');
 			$('#hamburger').attr('style', 'display: initial');
@@ -125,7 +128,7 @@ $(document).ready(function() {
 			$('#mobile-menu').attr('style', 'display: none');
 		},500);
 		$('#contact-page').attr('style', 'display: none');
-		$('#contact-header').attr('style', 'color: transparent');
+		// $('#contact-header').attr('style', 'color: transparent');
 		$('#scrolling-wrapper').attr('style', 'display: block');
 	});
 
@@ -143,8 +146,8 @@ $(document).ready(function() {
 		$('#scrolling-wrapper').attr('style', 'display: none');
 		$('#scroll-top-mobile').attr('style', 'display: none');
 		$('#contact-page').attr('style', 'display: block');
-		$('#contact-header').attr('style', 'color: #000000');
-		$('#contact-header').text('HIT ME UP!');
+		// $('#contact-header').attr('style', 'color: #000000');
+		// $('#contact-header').text('HIT ME UP!');
 	});
 
 
