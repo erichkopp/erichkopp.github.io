@@ -1,1 +1,4 @@
-<a href = "http://erichkopp.github.io">erichkopp.github.io</a>
+# RockPaperScissors
+A Rock, Paper, Scissors game
+
+https://erichkopp.github.io/

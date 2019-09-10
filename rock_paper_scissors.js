@@ -201,88 +201,38 @@ function initiate_game(user_choice) {
 
 	console.log(`${user_score} ${comp_score}`);
 
-	if(user_score==3) {
-		console.log("You're the Champion!");
-	}else if(comp_score==3) {
-		console.log("Computer wins!");
-	}
 }
 	
 
-// for(i=0; i<3; i++)
+
 user_shoot();
 
 
-
-if(user_score == 3) {
-	$('#message').html("You're the CHAMPION!")
-	// $(".boxes").fadeOut();
-}
-
-else if(comp_score == 3) {
-	$('#message').html("Computer is the CHAMPION!")
-	// $(".boxes").fadeOut();
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// do {
-	// if (user_score < 3 && comp_score < 3) {
-
-
-
-// 		// 	}
-// 		// while(user_score < 3 && comp_score < 3);	
-// 	// while(user_score < 3 && comp_score < 3);
-// // }
-
-// // if(user != false) {
-
-// // do {	
-
-
-// user_shoot(user)
-
-// user = ""
-// user_shoot(user)
-
-
+// while (user_score < 3) {
+// 	user_shoot();
 // }
-// while(user_score < 3 && comp_score < 3);
+// $('#message').html("You're the CHAMPION!")
 
 
-// if(user_score==3) {
-// 	console.log("You're the Champion!");
-// }else if(comp_score==3) {
-// 	console.log("Computer wins!");
-// }else {
-// 	user_shoot(user);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
