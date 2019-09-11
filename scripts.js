@@ -31,20 +31,45 @@ $(document).ready(function() {
 	});
 
 	
-	// MORE-ARROW DISAPPEARS AFTER SCROLLING (DESKTOP)
-	$("#scrolling-wrapper").on('scroll', function() {
-		if ($(window).width() > 750) {
-			let x = $("#first-img").position();
-			if (x.left <= -500) {
-				$('#more-arrow').fadeOut(500);
-			};	
-		};
+	// LEFT-ARROW APPEARS AFTER SCROLLING (DESKTOP)
+	// $('#scrolling-wrapper').on('scroll', function() {
+	// 	if ($(window).width() > 750) {
+	// 		let x = $("#first-img").position();
+	// 		if (x.left <= -500) {
+	// 			$('#left-arrow').animate({opacity: 0.7}, 500);
+	// 		};
+	// 	};
+	// });
+
+
+
+	// $('#right-arrow').click(function() {
+	// 	let x = $("#first-img").position();
+	// 	$("#scrolling-wrapper").animate({ scrollLeft: x.left -= 500 }, "slow");
+	// 	console.log(x.left)
+	// });
+
+	$('#right-arrow').click(function() {
+		$('#scrolling-wrapper').animate({
+			scrollLeft: '+=600px'
+		}, 'slow')
+	});
+	$('#left-arrow').click(function() {
+		$('#scrolling-wrapper').animate({
+			scrollLeft: '-=600px'
+		}, 'slow')
 	});
 
 
+	// $("#right-arrow").click(function(){
+ //      var first = $('#first-img');
+ //      $('#scrolling-wrapper').animate({scrollLeft: first.offset().left}, 1800);
+ //      return false;
+ //   }); 
+
 	// BACK-TO-TOP BUTTON APPEARS AND DISAPPEARS DEPENDING
 	// ON SCROLL POSITION (MOBILE)
-	$("#scrolling-wrapper").on('scroll', function() {
+	$('#scrolling-wrapper').on('scroll', function() {
 		if ($(window).width() <= 750) {
 			let x = $("#first-img").position();
 			if (x.top <= -500) {

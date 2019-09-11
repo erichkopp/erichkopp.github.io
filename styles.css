@@ -104,16 +104,6 @@ a {
 	padding-left: 3rem;
 }
 
-#more-arrow {
-  position: sticky;
-	right: 5%;
-	font-size: 2rem;
-	color: #FFFFFF;
-	z-index: 10;
-  bottom: 50%;
-  text-shadow: -3px 3px 5px #282828;
-}
-
 #contact-page {
 	display: block;
 	height: 60vh;
@@ -166,6 +156,7 @@ a {
 }
 
 #scrolling-wrapper {
+	position: relative;
 	height: 60vh;
 	/*width: 100%;*/
 	overflow-x: scroll;
@@ -173,6 +164,110 @@ a {
   white-space: nowrap;
   padding-bottom: 2.5rem;
 }
+
+.arrows {
+	position: sticky;
+	opacity: 0;
+	bottom: 50%;
+	z-index: 1;
+	left: 0;
+	margin: -.75rem;
+	height: 100%;
+}
+
+.arrows:hover {
+	cursor: pointer;
+	opacity: .7;
+	transition: .7s;
+}
+
+#left-arrow, #right-arrow {
+	line-height: 60vh;
+	width: 4rem;
+	/*height: 2.5rem;*/
+	font-size: 2.5rem;
+	color: #FFFFFF;
+	text-align: center;
+	background-color: rgba(0,0,0,0.7);
+	transition: .7s;
+}
+
+#left-arrow {
+	float: left;
+}
+
+#right-arrow {
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+	right: 0;
+}
+
+#last-desktop {
+	margin-right: -4rem;
+}
+
+
+/*.arrows {
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+	opacity: 0;
+	width: 100vw;
+	bottom: 50%;
+	z-index: 1;
+	left: 0;
+	margin: -.75rem;
+	height: 100%;
+	transition: 1s;
+}*/
+
+/*.arrows:hover {
+	opacity: .7;
+	transition: 1s;
+	cursor: pointer;
+}
+
+#left-arrow, #right-arrow {
+	line-height: 60vh;
+	width: 2.5rem;
+	font-size: 2.5rem;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: rgba(0,0,0,0.4);
+}*/
+
+
+
+
+
+/*#left-arrow, #right-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	font-size: 2.5rem;
+	color: #000000;
+	text-align: center;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	transition: 1s;
+}*/
+
+
+
+/* FONT AWESOME PADDING ISN't SYMMETRICAL */
+/* USED LEFT-ARROW FOR BOTH AND FLIPPED HORIZONTALLY */
+/*#right-arrow {
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+	float: right;
+}*/
 
 .photo {
 	margin: -.75rem;
@@ -290,6 +385,10 @@ a {
 		overflow: hidden;
 	}
 
+	#last-desktop {
+		margin-right: 0;
+	}
+
 	#header{
 		display: block;
 		margin: 0;
@@ -377,10 +476,6 @@ a {
 		background: #000000;
 	}
 
-	#more-arrow {
-		display: none;
-	}
-
 	#scroll-top-mobile {
 		display: none;
 		position: absolute;
@@ -411,7 +506,7 @@ a {
 		cursor: default;
 	}
 
-	#footer, #nav-links {
+	#footer, #nav-links, #left-arrow, #right-arrow {
 		display: none;
 	}
 
