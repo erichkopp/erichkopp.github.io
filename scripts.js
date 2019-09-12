@@ -8,7 +8,7 @@ $(document).ready(function() {
 	};
 
 
-	// CLICK TO RELOAD PAGE
+	// CLICK TO RELOAD PAGE (DESKTOP)
 	$('#logo').click(function() {
 		if ($(window).width() > 750){
     		location.reload();
@@ -16,7 +16,7 @@ $(document).ready(function() {
 	});
 
 
-	// OPEN MODAL IMAGE
+	// OPEN MODAL IMAGE (DESKTOP)
 	$('.photo').click(function() {
 		if ($(window).width() > 750) {
 			$('#modal').attr('style', 'display: block');
@@ -31,24 +31,7 @@ $(document).ready(function() {
 	});
 
 	
-	// LEFT-ARROW APPEARS AFTER SCROLLING (DESKTOP)
-	// $('#scrolling-wrapper').on('scroll', function() {
-	// 	if ($(window).width() > 750) {
-	// 		let x = $("#first-img").position();
-	// 		if (x.left <= -500) {
-	// 			$('#left-arrow').animate({opacity: 0.7}, 500);
-	// 		};
-	// 	};
-	// });
-
-
-
-	// $('#right-arrow').click(function() {
-	// 	let x = $("#first-img").position();
-	// 	$("#scrolling-wrapper").animate({ scrollLeft: x.left -= 500 }, "slow");
-	// 	console.log(x.left)
-	// });
-
+	// LEFT AND RIGHT SCROLL BUTTONS (DESKTOP)
 	$('#right-arrow').click(function() {
 		$('#scrolling-wrapper').animate({
 			scrollLeft: '+=600px'
@@ -60,12 +43,6 @@ $(document).ready(function() {
 		}, 'slow')
 	});
 
-
-	// $("#right-arrow").click(function(){
- //      var first = $('#first-img');
- //      $('#scrolling-wrapper').animate({scrollLeft: first.offset().left}, 1800);
- //      return false;
- //   }); 
 
 	// BACK-TO-TOP BUTTON APPEARS AND DISAPPEARS DEPENDING
 	// ON SCROLL POSITION (MOBILE)
@@ -153,7 +130,6 @@ $(document).ready(function() {
 			$('#mobile-menu').attr('style', 'display: none');
 		},500);
 		$('#contact-page').attr('style', 'display: none');
-		// $('#contact-header').attr('style', 'color: transparent');
 		$('#scrolling-wrapper').attr('style', 'display: block');
 	});
 
@@ -171,8 +147,6 @@ $(document).ready(function() {
 		$('#scrolling-wrapper').attr('style', 'display: none');
 		$('#scroll-top-mobile').attr('style', 'display: none');
 		$('#contact-page').attr('style', 'display: block');
-		// $('#contact-header').attr('style', 'color: #000000');
-		// $('#contact-header').text('HIT ME UP!');
 	});
 
 
@@ -181,7 +155,6 @@ $(document).ready(function() {
 		$('#mobile-menu').attr('style', 'display: block');
 		$('#mobile-menu').addClass('slideInRight');
 		$('#hamburger').attr('style', 'display: none');
-		// $('#close-mobile').attr('style', 'z-index: 5');
 		$('#close-mobile').attr('style', 'display: block');
 		$('#close-mobile').click(function() {
 			$('#mobile-menu').removeClass('slideInRight')

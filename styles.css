@@ -158,7 +158,6 @@ a {
 #scrolling-wrapper {
 	position: relative;
 	height: 60vh;
-	/*width: 100%;*/
 	overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
@@ -184,7 +183,6 @@ a {
 #left-arrow, #right-arrow {
 	line-height: 60vh;
 	width: 4rem;
-	/*height: 2.5rem;*/
 	font-size: 2.5rem;
 	color: #FFFFFF;
 	text-align: center;
@@ -206,69 +204,6 @@ a {
 	right: 0;
 }
 
-#last-desktop {
-	margin-right: -3.65rem;
-}
-
-
-/*.arrows {
-	position: sticky;
-	display: flex;
-	justify-content: space-between;
-	opacity: 0;
-	width: 100vw;
-	bottom: 50%;
-	z-index: 1;
-	left: 0;
-	margin: -.75rem;
-	height: 100%;
-	transition: 1s;
-}*/
-
-/*.arrows:hover {
-	opacity: .7;
-	transition: 1s;
-	cursor: pointer;
-}
-
-#left-arrow, #right-arrow {
-	line-height: 60vh;
-	width: 2.5rem;
-	font-size: 2.5rem;
-	text-align: center;
-	color: #FFFFFF;
-	background-color: rgba(0,0,0,0.4);
-}*/
-
-
-
-
-
-/*#left-arrow, #right-arrow {
-	width: 2.5rem;
-	height: 2.5rem;
-	font-size: 2.5rem;
-	color: #000000;
-	text-align: center;
-	background-color: #FFFFFF;
-	border-radius: 50%;
-	transition: 1s;
-}*/
-
-
-
-/* FONT AWESOME PADDING ISN't SYMMETRICAL */
-/* USED LEFT-ARROW FOR BOTH AND FLIPPED HORIZONTALLY */
-/*#right-arrow {
-	-moz-transform: scaleX(-1);
-	-o-transform: scaleX(-1);
-	-webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
-	filter: FlipH;
-	-ms-filter: "FlipH";
-	float: right;
-}*/
-
 .photo {
 	margin: -.75rem;
 	border-left: .75rem solid #000000;
@@ -286,6 +221,14 @@ a {
 
 .photo:hover {
 	cursor: pointer;
+}
+
+#first-img {
+	border-left: 1.25rem solid #000000
+}
+
+#last-desktop {
+	margin-right: -3.65rem;
 }
 
 #footer {
@@ -316,16 +259,16 @@ a {
 
 /* MODAL BACKGROUND */
 #modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */	
+	display: none; /* HIDDEN BY DEFAULT */
+	position: fixed; /* STAY IN PLACE */
+	z-index: 1; /* ON TOP */	
 	left: 0;
 	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: hidden; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	width: 100%; /* FULL WIDTH */
+	height: 100%; /* FULL HEIGHT */
+	overflow: hidden; /* NO SCROLL */
+	background-color: rgb(0,0,0); /* FALLBACK COLOR */
+	background-color: rgba(0,0,0,0.9); /* BLACK WITH OPACITY */
 }
 
 /* MODAL CONTENT (IMG) */
@@ -371,6 +314,8 @@ a {
 }
 
 
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
 
 
 /* MOBILE & TABLET VIEW */
@@ -479,7 +424,6 @@ a {
 	#scroll-top-mobile {
 		display: none;
 		position: absolute;
-		/*top: 60%;*/
 		bottom: 35%;
 		left: 85%;
 		font-size: 2.5rem;
