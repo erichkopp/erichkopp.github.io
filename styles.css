@@ -334,6 +334,10 @@ a {
 		margin-right: 0;
 	}
 
+	#first-img {
+		border: 0;
+	}
+
 	#header{
 		display: block;
 		margin: 0;
