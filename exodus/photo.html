@@ -9,6 +9,7 @@
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:500&display=block" rel="stylesheet">
+	<link rel="stylesheet" href="animate.min.css">
 	<script src="https://kit.fontawesome.com/e8b74c6543.js"></script>
 	<script src="jquery-3.4.1.min.js"></script>
 </head>
@@ -18,22 +19,49 @@
 <div id="wrapper">
 	
 
-	<!-- HEADER -->
+	<!-- HEADER (DESKTOP) -->
 	<div class="header">
 		<div id="icon" class="noselect">
 			<img src="assets/icon_large.png">
 		</div>
 		<ul id="nav-links">
-			<li><a href="#" id="about">ABOUT</a></li>
 			<li><a href="design.html" id="design">DESIGN</a></li>
 			<li><a href="photo.html" id="photography">PHOTOGRAPHY</a></li>
 			<li><a href="#" id="contact">CONTACT</a></li>
 		</ul>
 	</div>
 
+	<!-- MENU (MOBILE) -->
+	<div id="mobile-menu">
+		<ul id="mobile-links">
+			<li>
+				<a href="design.html">DESIGN</a>
+			</li>
+			<li>
+				<a href="photo.html">PHOTOGRAPHY</a>
+			</li>
+			<li>
+				<a href="#">CONTACT</a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/exoduscreativefl/" target="_blank"><i class="fab fa-facebook"></i></a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/exoduscreativedesign/" target="_blank"><i class="fab fa-instagram"></i></a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- HEADER (MOBILE) -->
+	<div id="mobile-header">
+		<img id="mobile-logo" src="assets/primary_logo.png">
+		<i id="hamburger" class="fas fa-bars"></i>
+		<i id="exit-menu" class="fas fa-times"></i>
+	</div>
+
 	<!-- SCROLLING WRAPPER FOR PHOTOS/ART DISPLAY -->
 	<div id="scrolling-wrapper" class="disable-scrollbars">
-		<div class="image">
+		<div class="image" id="first-image">
 			<img src="assets/photo/001.jpg">
 		</div>
 		<div class="image">
@@ -95,6 +123,7 @@
 		</div>
 		<div id="last-img" class="image">
 			<img src="assets/photo/022.jpg">
+			<p id="copyright" class="noselect"><i class="far fa-copyright"></i> EXODUS CREATIVE 2020</p>
 		</div>
 
 		<!-- SCROLL-ARROWs (DESKTOP) -->
@@ -103,9 +132,15 @@
 
 	</div>
 
+
+	<div id="modal" class="noselect">
+		<span id="close">&times;</span>
+		<img id="modal-img">
+	</div>
+
 	<!-- FOOTER (DESKTOP) -->
 	<div id="footer">
-		<p id="copyright" class="noselect"><i class="far fa-copyright"></i> EXODUS CREATIVE 2019</p>
+		<p id="copyright" class="noselect"><i class="far fa-copyright"></i> EXODUS CREATIVE 2020</p>
 		<ul id="social-links">
 			<li>
 				<a href="https://www.facebook.com/exoduscreativefl/" target="_blank"><i class="fab fa-facebook"></i></a>
