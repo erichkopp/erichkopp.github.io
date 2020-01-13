@@ -34,6 +34,13 @@ $(document).ready(function() {
 	});
 
 
+	// SCROLL TO TOP (MOBILE)
+	$('#mobile-logo').click(function() {
+  		$('#scrolling-wrapper').animate({ scrollTop: 0 }, 'slow');
+  		return false;
+	})
+
+
 	// OPEN MOBILE MENU
 	$('#hamburger').click(function() {
 		$('#mobile-menu').attr('style', 'display: block');

@@ -312,6 +312,7 @@ a {
 	#mobile-logo {
 		height: 10vh;
 		width: auto;
+		cursor: pointer;
 	}
 
 	#hamburger, #exit-menu {
@@ -345,11 +346,6 @@ a {
 	#mobile-links li {
 		transition: .6s;
 		margin: 2rem 0;
-	}
-
-	#mobile-links li:hover {
-		font-size: 2.8rem;
-		transform: translateY(-.3rem);
 	}
 
 	#scrolling-wrapper {
