@@ -321,7 +321,8 @@ a {
 
 	#hamburger, #exit-menu {
 		cursor: pointer;
-		color: #ffffff;
+		/*color: #ffffff;*/
+		color: #13216a;
 		font-size: 2.5rem;
 		line-height: 10vh;
 		float: right;
