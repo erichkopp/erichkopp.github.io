@@ -15,7 +15,8 @@ body {
 	overflow-x: hidden;
 	display: block;
 	height: 100%;
-	background: linear-gradient(123.2deg, #29006C 2.65%, #EF008F 88.92%);
+	/*background: linear-gradient(123.2deg, #29006C 2.65%, #EF008F 88.92%);*/
+	background: #FFFFFF;
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: .5rem;
 }
@@ -221,7 +222,7 @@ a {
 #modal {
 	display: none; /* HIDDEN BY DEFAULT */
 	position: fixed; /* STAY IN PLACE */
-	z-index: 1; /* ON TOP */	
+	z-index: 1; /* ON TOP */
 	left: 0;
 	top: 0;
 	width: 100%; /* FULL WIDTH */
@@ -241,7 +242,7 @@ a {
 }
 
 /* MODAL ANIMATION */
-#modal img {    
+#modal img {
 	-webkit-animation-name: zoom;
 	-webkit-animation-duration: 0.6s;
 	animation-name: zoom;
@@ -249,12 +250,12 @@ a {
 }
 
 @-webkit-keyframes zoom {
-	from {-webkit-transform:scale(0)} 
+	from {-webkit-transform:scale(0)}
 	to {-webkit-transform:scale(1)}
 }
 
 @keyframes zoom {
-	from {transform:scale(0)} 
+	from {transform:scale(0)}
 	to {transform:scale(1)}
 }
 
@@ -294,13 +295,16 @@ a {
 	}
 
 	#index-logo {
-		width: 100%;
+		width: 80%;
 		height: auto;
 	}
 
 	.index-links {
 		display: block;
 		text-align: center;
+		margin: 3.5rem 0;
+	  font-size: 1.5rem;
+	  color: #13216a;
 	}
 
 	#mobile-header {
