@@ -290,10 +290,6 @@ a {
 		visibility: hidden;
 	}
 
-	#mobile-header {
-		display: block;
-	}
-
 	#index-logo {
 		width: 80%;
 		height: auto;
@@ -308,24 +304,39 @@ a {
 	}
 
 	#mobile-header {
+	  display: flex;
+	  align-items: center;
 		z-index: 10;
 		height: 10vh;
 		position: relative;
 	}
+	
+	#dummy-center {
+	  visibility: hidden;
+	  width: 50px;
+	}
 
 	#mobile-logo {
-		height: 10vh;
+		height: 70%;
 		width: auto;
 		cursor: pointer;
 	}
 
 	#hamburger, #exit-menu {
+	  width: 50px;
 		cursor: pointer;
 		/*color: #ffffff;*/
 		color: #13216a;
 		font-size: 2.5rem;
-		line-height: 10vh;
-		float: right;
+		/*float: right;*/
+	}
+	
+	#hamburger, #exit-menu, #mobile-logo {
+	  margin-left: auto;
+	}
+	
+	#exit-menu {
+	  color: #ffffff;
 	}
 
 	#exit-menu {
@@ -338,19 +349,23 @@ a {
 		z-index: 1;
 		height: 100vh;
 		width: 100vw;
-		background: linear-gradient(123.2deg, #29006C 2.65%, #EF008F 88.92%);
+		/*background: linear-gradient(123.2deg, #29006C 2.65%, #EF008F 88.92%);*/
+		background: linear-gradient(123.2deg, #EF008F 2.65%, #29006C 88.92%);
 	}
 
 	#mobile-links {
 		text-align: center;
 	    font-size: 2rem;
-	    color: #ffffff;
-	    margin-top: 6rem;
+	    margin-top: 8rem;
 	}
 
 	#mobile-links li {
 		transition: .6s;
 		margin: 2rem 0;
+	}
+	
+	#mobile-links a {
+	  color: #ffffff;
 	}
 
 	#scrolling-wrapper {
